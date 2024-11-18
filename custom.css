@@ -1,0 +1,394 @@
+/*SCHRIFTART*/
+
+/* Bis auf weiteres wird Default verwendet
+@font-face {
+    font-family: 'FiraSans-Regular';
+    src: url("../../../../../universal/VAADIN/themes/custom/fonts/FiraSans-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+*/
+
+
+/*LOGINSEITE*/
+
+/*Loginseite Hintergrundfarbe*/
+.uwp-login {
+  background: #00718f !important;
+}
+
+/*Loginseite Hintergrund Logo*/
+.uwp-login-logo-container {
+    background-image: none !important; /*Consor-Muster entfernen*/
+    background-color: #00718f;
+}
+
+/*Loginseite Login-Button*/
+.button.button__primary.login-button.login-form-field {
+  background-color: #00718f;
+}
+
+
+/*HEADER*/
+
+/* Startseite: Ersetzen des Images in der Menuleiste*/
+#header {
+  background-image: none !important; /*Consor-Muster entfernen*/
+  background-color: #00718f;
+  }
+
+/* In einem GeVo: Ersetzen des Images in der Menuleiste*/
+#fastentry-header {
+  background-image: none !important; /*Consor-Muster entfernen*/
+  background-color: #00718f;
+}
+
+
+/*BUTTONS*/
+
+.button.button__primary {
+  background-color: #338da5 !important; /*Hintergrundfarbe*/
+  color: white !important; /*Textfarbe in Button*/
+}
+
+.button.button__primary:hover {
+  background-color: #00718f !important;
+}
+
+.button.button__primary:active {
+    background-color: #00516f !important;
+}
+
+.button.button__primary:disabled {
+    background-color: #e0e0e0 !important;
+}
+
+
+/*INFO UND WARNMELDUNGEN*/
+
+.sfc-WARNING {
+  -webkit-text-fill-color: transparent !important; /*Farbe vom Labeltext "WARNUNG"*/
+  width: 0px; /*damit Box ausgeblendet wird und Warnmeldetext linksbündig*/
+  background-color: white !important; /*Hintergrundfarbe der Warnmeldung*/
+}
+
+.column.form--column.sfc-WARNING {
+  border-bottom-color: transparent  !important; /*Farbe Underline der Warnmeldung anpassen*/
+}
+
+/*Für Text, der ausgegeben wird in Warnmeldung*/
+.sfc-WARNING.S_WARNING textarea {
+  -webkit-text-fill-color: #E1100A !important;
+  font-weight: bold !important;
+  padding-left: 0px;
+  padding-top: 15px;
+}
+
+
+.sfc-INFO {
+  -webkit-text-fill-color: transparent !important; /*Farbe vom Labeltext "INFO"*/
+  width: 0px; /*damit Box ausgeblendet wird und Infotext linksbündig*/
+  background-color: white !important; /*Hintergrundfarbe der Infomeldung*/
+}
+
+.form--column.sfc-INFO {
+  border-bottom-color: transparent  !important; /*Farbe Underline der Infomeldung anpassen*/
+}
+
+/*Für Text, der ausgegeben wird in Infomeldung*/
+.sfc-INFO.S_INFOMELDUNG textarea {
+  -webkit-text-fill-color: #778e00 !important;
+  font-weight: bold !important;
+  padding-left: 0px;
+  padding-top: 15px;
+}
+
+
+/*Minimale Breite auf 0 gesetzt, damit Info und Warnmeldungen linksbündig möglich*/
+.form .form--row .form--column {
+  min-width: 0px !important;
+}
+
+/*Anpassung Spaltenbreite Warnmeldung, damit gesamte Länge genutzt wird bis zum Umbruch*/
+.column.form--column.column__grow.column__text_area.sfc-WARNING {
+  min-width: 850px !important;
+}
+
+/*Anpassung Spaltenbreite Infomeldung, damit gesamte Länge genutzt wird bis zum Umbruch*/
+.column.form--column.column__grow.column__text_area.sfc-INFO {
+  min-width: 850px !important;
+}
+
+
+/*DIVERSES*/
+
+/*Required-Icon (Asterisk) Farbe wechseln*/
+.required-icon {
+  color: #E1100A !important;
+}
+
+/*Required-Icon (Asterisk) in Tabellen: Farbe wechseln*/
+.primary-color-icon.required  {
+  color: #E1100A !important;
+}
+
+/*Erster Radio-Button ausblenden*/
+vaadin-radio-group vaadin-radio-button:first-of-type {
+  display: none;
+}
+
+/*Inputfelder vertikal zentrieren*/
+.column.form--column {
+  justify-content: center
+}
+
+/*Schriftfarbe der gespertten Inputfelder anpassen (input)*/
+.hide-parent input[disabled] {
+  -webkit-text-fill-color: rgba(165, 169, 171, 1);
+}
+
+/*Schriftfarbe der gespertten Inputfelder anpassen (label)*/
+.hide-parent label[disabled] {
+  -webkit-text-fill-color: rgba(165, 169, 171, 1);
+}
+
+/*BEARBEITUNGSBEREICH DOKUMENT*/
+
+/*Hintergrundfarbe Bearbeitungsbereich 1*/
+.column.column__grow {
+  background: white;
+}
+
+/*Hintergrundfarbe Bearbeitungsbereich 2*/
+.splitpanel-second-container-work{
+  background: white;
+}
+
+/*Hintergrundfarbe Bearbeitungsbereich 3*/
+.content-box:not(.content-box__light) {
+  background-color: white !important;
+}
+
+/*Gepunkteter Rahmen am Ende eines Abschnitts entfernen*/
+.row.top_container {
+  border-bottom: none;
+}
+
+/*Balkenfarbe am Ende der Seite*/
+#fastentry-view-button-bar {
+  background-color: #f2fafb;
+}
+
+/*gesamter Bearbeitungsbereich ausrichten*/
+#PanelDynamic {
+  padding-left: 0px;
+}
+
+/*gesamter Bearbeitungsbereich ausrichten -> Box oben*/
+.level_0>.row {
+  margin-top: 15px !important;
+}
+
+/*Ausrichtung von Dokumenttitel 1*/
+.title.title__big {
+  padding-left: 24px;
+}
+
+/*Schriftgrösse von Dokumenttitel 2*/
+.title.title__medium {
+  font-size: 20px !important;
+}
+
+/*Anpassungen an linke Menüleiste: Menüeinträge*/
+.fastentry-treegrid vaadin-grid-cell-content{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*Top linke Menüleiste weiss formatiert*/
+#fastentry-treegrid-container-buttoncontainer {
+  background-color: white;
+}
+
+/*Anpassungen an linke Menüleiste: Margin entfernen und so gesamte Breite des Menüeintrages mit Farbe füllen*/
+#TreeDocFastEntryApplication {
+  margin-left: 0px;
+}
+
+/*Rahmenline oben von Inputfelder entfernen*/
+.form .form--row.first_form_row .form--column {
+  border-top: 0px !important;
+}
+
+/*Padding der Radio-Buttons anpassen*/
+.select-optiongroup.select-optiongroup-horizontal {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/*Textfarbe von Bausteinselektion, wenn UWR erlaubt*/
+.hide-parent .container_with_checkbox label{
+  color: rgba(50, 58, 63, 1);
+}
+
+/*Margin von auswählbaren Bausteinen in Tabellen*/
+.form.table_container.border_false {
+  margin-bottom: 0px;
+  margin-top: 0px
+}
+
+/*Textfarbe von auswählbaren Bausteinen in Tabellen*/
+.form.table_container.border_false label {
+  color: rgba(50, 58, 63, 1)
+}
+
+/*Standardfeldlabel in Tabellenformat zentrieren*/
+.column.table_column_start {
+  padding-bottom: 5px;
+  padding-top: 2px;
+}
+
+/*Passt Hintergrundfarbe von Bausteintextfeldern an*/
+.html-textarea {
+  background: #f5f6f6 !important;
+}
+
+/*Einrückung von selektierbaren Bausteinen*/
+.container_with_checkbox {
+  left: -5px;
+}
+
+/*Symbolfarbe bei änderbaren Bausteintexte (wenn noch kein Inhalt)*/
+.edit-icon-empty {
+  stroke: #00718f !important;
+}
+
+/*KONTEXTMENÜ FÜR DRUCKVORSCHAU*/
+
+/*Hintergrundfarbe Druckvorschau Auswahlbereich*/
+.dialog-content-box .form.form__no-margin-bottom.namedcopyplugin-content {
+  background-color: #f5f5f5 !important;
+}
+
+/*Hintergrundfarbe Druckvorschau Auswahlbereich innen*/
+.dialog-content-box .column.form--column.column__grow {
+  background-color: #f5f5f5 !important;
+}
+
+/*ANLAGEN SIDE-MENU*/
+
+/*Hintergrundfarbe*/
+#collabViewLayout {
+  background: #ffffff !important;
+}
+
+/*Schriftfarbe anpassen*/
+.title-no-padding {
+  color: #338da5;
+}
+
+
+/*NEUER GEVO MENÜ*/
+
+/*Hintergund bei "Neuer GeVo" weiss formatieren*/
+#MainContractDataView {
+  background-color: white !important;
+}
+
+/*Titel linksbündig machen*/
+#LabelTitleMainContractDataView {
+  padding-left: 0px !important;
+}
+
+/*Margin anpassen zwischen Titel und Label bei "Neuer GeVo"*/
+#contactDescrInputRow {
+  margin-top: 20px !important;
+}
+
+/*GENERELL BODY*/
+
+body {
+  --lumo-font-family: "Open Sans", sans-serif;
+  --lumo-primary-color-10pct: #f5f6f6 !important; /*Header Highlight Color*/
+  --lumo-primary-color-20pct: #00718f !important;
+  --lumo-body-text-color: #00718f !important;
+  --lumo-header-text-color: #00718f !important;
+  --lumo-primary-text-color: rgba(255, 255, 255, 1);
+  --lumo-secondary-text-color: #338da5 !important; /*Passt Textfarbe der Überschriften an*/
+  --lumo-disabled-text-color: rgba(165, 169, 171, 1);
+  --lumo-primary-contrast-color: #00718f !important;
+  --lumo-contrast: #f2fafb !important ; /*Passt Hintergrundfarbe der Inputfelder an -> #e9f3f5 ist zu dunkel*/
+  --lumo-contrast-30pct: rgba(255, 255, 255, 1);
+  --lumo-contrast-20pct: rgba(255, 255, 255, 1);
+  --vaadin-app-layout-navbar-offset-size: 80px;
+  --lumo-button-size: 32px;
+  --lumo-text-field-size: 32px;
+  --lumo-shade: rgba(50, 58, 63, 1);
+  --lumo-shade-5pct: rgba(212, 231, 236, 0.6) !important; /*Passt Hover-Hintergrundfarbe des Fastentry Treegrid an*/
+  --lumo-shade-10pct: #f5f6f6 !important; /*Passt Hintergrundfarbe für gesperrte Standardfelder an*/
+  --lumo-shade-20pct: rgba(207, 210, 211, 1);
+  --lumo-shade-30pct: rgba(165, 169, 171, 1);
+  --lumo-shade-40pct: rgba(126, 132, 135, 1);
+  --lumo-shade-50pct: rgba(87, 94, 98, 1);
+  --lumo-shade-60pct: rgba(50, 58, 63, 1);
+  --lumo-shade-70pct: rgba(50, 58, 63, 1);
+  --lumo-shade-80pct: rgba(50, 58, 63, 1);
+  --lumo-shade-90pct: rgba(50, 58, 63, 1);
+  --lumo-shade-hover: rgba(186, 186, 186, .1);
+  --lumo-font-size-xs: 10px;
+  --lumo-font-size-s: 12px;
+  --lumo-font-size-m: 13px;
+  --lumo-line-height-xs: 15px;
+  --lumo-line-height-s: 16px;
+  --lumo-line-height-m: 20px;
+  --lumo-font-weight-s: 400;
+  --lumo-font-weight-l: 700;
+  --lumo-success-color: rgba(210, 239, 230, 1);
+  --lumo-success-contrast-color: rgba(29, 176, 131, 1);
+  --lumo-error-color: rgba(247, 215, 220, 1);
+  --lumo-error-contrast-color: rgba(215, 57, 81, 1);
+  --lumo-warning-color: rgba(255, 231, 204, 1);
+  --lumo-warning-contrast-color: rgba(255, 133, 0, 1);
+  --iron-icon-width: 16px;
+  --iron-icon-height: 16px;
+  --menu-bar-width: 159px;
+  --lumo-size-m: 32px;
+  --lumo-space-xs: 6px;
+  --menu-bar-height: var(--vaadin-app-layout-navbar-offset-size);
+  --lumo-icon-size-m: 16px;
+  --vaadin-combo-box-overlay-max-height: 176px;
+  --lumo-space-m: 16px;
+  --toggle-button-width: 36px;
+  --clear-button-width: 36px;
+  --vaadin-infinite-scroller-buffer-width: 276px;
+  --required-icon-color: var(--lumo-primary-color);
+  --fastentry-treegrid-checkbox-border-color: var(--lumo-shade-30pct);
+  --fastentry-treegrid-checkbox-background-color: var(--lumo-contrast);
+  --fastentry-treegrid-checkbox-color: var(--lumo-primary-color);
+  --radiobutton-background-color: var(--lumo-contrast);
+  --radiobutton-border-color: var(--lumo-shade-30pct);
+  --loading-indicator-color: #9ADCFF;
+  --lumo-primary-color: #338da5 !important; /*Ändert die Hintergrundfarbe der Menübuttons links*/
+  --tooltip-text-color: rgba(50, 58, 63, 1) !important; /*Ändert die Textfarbe im Tooltip*/
+  --tooltip-background-color: #d4e7ec !important; /*Ändert die Hintergrundfarbe im Tooltip*/
+}
+
+
+/*label "Bausteintext" ausblenden; gezielte Anpassung Risiko1*/
+label#DynamicPanel_CC_80DynamicPanel_CC_79DynamicPanel_DC_79_C_GUI_FEUER_PFWSK_VS_WEITERE_SACHEN_ZUSATZ1_CompLabel {
+  display: none;
+}
+/*label "Bausteintext" ausblenden; gezielte Anpassung Risiko2*/
+label#DynamicPanel_CC_82DynamicPanel_CC_81DynamicPanel_DC_81_C_GUI_FEUER_PFWSK_VS_WEITERE_SACHEN_ZUSATZ2_CompLabel {
+  display: none;
+}
+
+/*label "Bausteintext" ausblenden; gezielte Anpassung Risiko3*/
+label#DynamicPanel_CC_86DynamicPanel_CC_85DynamicPanel_DC_85_C_GUI_FEUER_PFWSK_VS_WEITERE_KOSTEN_ZUSATZ1_CompLabel {
+  display: none;
+}
+
+/*label "Bausteintext" ausblenden; gezielte Anpassung Risiko4*/
+label#DynamicPanel_CC_88DynamicPanel_CC_87DynamicPanel_DC_87_C_GUI_FEUER_PFWSK_VS_WEITERE_KOSTEN_ZUSATZ2_CompLabel {
+  display: none;
+}
