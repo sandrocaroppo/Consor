@@ -251,7 +251,7 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
 
 /*Einrückung von selektierbaren Bausteinen*/
 .container_with_checkbox {
-  left: -5px;
+  left: 0px !important;
 }
 
 /*Symbolfarbe bei änderbaren Bausteintexte (wenn noch kein Inhalt)*/
