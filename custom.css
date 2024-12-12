@@ -172,7 +172,7 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
 
 /*Balkenfarbe am Ende der Seite*/
 #fastentry-view-button-bar {
-  background-color: #0088CC;
+  background-color: #F0F0FF;
 }
 
 /*gesamter Bearbeitungsbereich ausrichten*/
@@ -313,7 +313,7 @@ body {
   --lumo-secondary-text-color: #002641  !important; /*Passt Textfarbe der Überschriften an*/
   --lumo-disabled-text-color: rgba(165, 169, 171, 1);
   --lumo-primary-contrast-color: #002641 !important; /*Auswahl Radiobuttons innere Farbe*/
-  --lumo-contrast: #CDEBFF !important ; /*Passt Hintergrundfarbe der Inputfelder an*/
+  --lumo-contrast: #E1F3FF !important ; /*Passt Hintergrundfarbe der Inputfelder an*/
   --lumo-contrast-30pct: rgba(255, 255, 255, 1);
   --lumo-contrast-20pct: rgba(255, 255, 255, 1);
   --vaadin-app-layout-navbar-offset-size: 80px;
