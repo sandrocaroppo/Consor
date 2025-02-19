@@ -1,13 +1,46 @@
 /*SCHRIFTART*/
 
-/* Bis auf weiteres wird Default verwendet
 @font-face {
-    font-family: 'FiraSans-Regular';
-    src: url("../../../../../universal/VAADIN/themes/custom/fonts/FiraSans-Regular.ttf") format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'BarmeniaGothaerWeb';
+  src: url("../../../../../universal/VAADIN/themes/custom/fonts/BarmeniaGothaerWeb-Regular.woff") format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-*/
+
+@font-face {
+  font-family: 'BarmeniaGothaerWeb';
+  src: url("../../../../../universal/VAADIN/themes/custom/fonts/BarmeniaGothaerWeb-RegularItalic.woff") format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BarmeniaGothaerWeb';
+  src: url("../../../../../universal/VAADIN/themes/custom/fonts/BarmeniaGothaerWeb-Bold.woff") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BarmeniaGothaerWeb';
+  src: url("../../../../../universal/VAADIN/themes/custom/fonts/BarmeniaGothaerWeb-BoldItalic.woff") format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BarmeniaGothaerWeb';
+  src: url("../../../../../universal/VAADIN/themes/custom/fonts/BarmeniaGothaerWeb-Medium.woff") format('truetype');
+  font-weight: 550;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BarmeniaGothaerWeb';
+  src: url("../../../../../universal/VAADIN/themes/custom/fonts/BarmeniaGothaerWeb-MediumItalic.woff") format('truetype');
+  font-weight: 550;
+  font-style: italic;
+}
 
 
 /*LOGINSEITE*/
@@ -19,8 +52,8 @@
 
 /*Loginseite Hintergrund Logo*/
 .uwp-login-logo-container {
-    background-image: none !important; /*Consor-Muster entfernen*/
-    background-color: #002641;
+  background-image: none !important; /*Consor-Muster entfernen*/
+  background-color: #002641;
 }
 
 /*Loginseite Login-Button*/
@@ -28,14 +61,13 @@
   background-color: #002641;
 }
 
-
 /*HEADER*/
 
 /* Startseite: Ersetzen des Images in der Menuleiste*/
 #header {
   background-image: none !important; /*Consor-Muster entfernen*/
   background-color: #002641;
-  }
+}
 
 /* In einem GeVo: Ersetzen des Images in der Menuleiste*/
 #fastentry-header {
@@ -43,6 +75,10 @@
   background-color: #002641;
 }
 
+/*Grösse Logo anpassen für korrektes Verhältnis*/
+#companyLogo {
+  width: 194px !important;
+}
 
 /*BUTTONS*/
 
@@ -56,7 +92,7 @@
 }
 
 .button.button__primary:active {
-    background-color: #BABAFF !important;
+  background-color: #BABAFF !important;
 }
 
 
@@ -122,16 +158,6 @@ div[slot="error-message"] {
 
 /*DIVERSES*/
 
-/*Required-Icon (Asterisk) Farbe wechseln*/
-.required-icon {
-  color: #002641 !important;
-}
-
-/*Required-Icon (Asterisk) in Tabellen: Farbe wechseln*/
-.primary-color-icon.required  {
-  color: #002641 !important;
-}
-
 /*Erster Radio-Button ausblenden*/
 vaadin-radio-group vaadin-radio-button:first-of-type {
   display: none;
@@ -144,12 +170,12 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
 
 /*Schriftfarbe der gespertten Inputfelder anpassen (input)*/
 .hide-parent input[disabled] {
-  -webkit-text-fill-color: #AFB9C3;
+  -webkit-text-fill-color: #002641;
 }
 
 /*Schriftfarbe der gespertten Inputfelder anpassen (label)*/
 .hide-parent label[disabled] {
-  -webkit-text-fill-color: #AFB9C3;
+  -webkit-text-fill-color: #002641;
 }
 
 /*BEARBEITUNGSBEREICH DOKUMENT*/
@@ -275,18 +301,37 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
   background-color: #f5f5f5 !important;
 }
 
-/*ANLAGEN SIDE-MENU*/
+/*ANLAGEN & SUCHLAYOUT SIDE-MENU*/
 
-/*Hintergrundfarbe*/
+/*Hintergrundfarbe Anlagen*/
 #collabViewLayout {
   background: #ffffff !important;
 }
 
-/*Schriftfarbe anpassen*/
+/*Schriftfarbe anpassen Anlagen*/
 .title-no-padding {
   color: #338da5;
 }
 
+/*Hintergrundfarbe Button Anlagen*/
+#collabViewButton {
+  background-color: white !important;
+}
+
+/*Hintegrundfarbe Suchlayout Rahmen*/
+#searchViewLayout {
+  background-color: #ffffff !important;
+}
+
+/*Hintegrundfarbe Suchlayout Inhalt*/
+#searchViewLayoutContent {
+  background-color: #ffffff !important;
+}
+
+/*Hintergrundfarbe Button Suchlayout*/
+#searchViewButton {
+  background-color: #ffffff !important;
+}
 
 /*NEUER GEVO MENÜ*/
 
@@ -305,10 +350,17 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
   margin-top: 20px !important;
 }
 
+/*Schriftart Menüleiste*/
+.header-menubar-button {
+  font-family: "BarmeniaGothaerWeb" !important;
+  font-weight: bold
+}
+
 /*GENERELL BODY*/
 
 body {
-  --lumo-font-family: "Open Sans", sans-serif;
+  --lumo-font-family: "BarmeniaGothaerWeb" !important;
+  font-weight: normal;
   --lumo-primary-color-10pct: #f5f6f6 !important; /*Header Highlight Color*/
   --lumo-primary-color-20pct: #003C66 !important; /*Headerfarbe bei Hover*/
   --lumo-body-text-color: #002641 !important;
@@ -346,8 +398,8 @@ body {
   --lumo-success-color: rgba(210, 239, 230, 1);
   --lumo-success-contrast-color: rgba(29, 176, 131, 1);
   --lumo-error-color: rgba(247, 215, 220, 1);
-  --lumo-error-color-10pct: #FFD8D1 !important; /*Ändert die Hintergrundfarbe von Validierungsfelder*/  
-  --lumo-error-contrast-color: rgba(215, 57, 81, 1);  
+  --lumo-error-color-10pct: #FFD8D1 !important; /*Ändert die Hintergrundfarbe von Validierungsfelder*/
+  --lumo-error-contrast-color: rgba(215, 57, 81, 1);
   --lumo-warning-color: rgba(255, 231, 204, 1);
   --lumo-warning-contrast-color: rgba(255, 133, 0, 1);
   --iron-icon-width: 16px;
@@ -369,7 +421,12 @@ body {
   --radiobutton-background-color: var(--lumo-contrast);
   --radiobutton-border-color: var(--lumo-shade-30pct);
   --loading-indicator-color: #9ADCFF;
-  --lumo-primary-color: #002641 !important; /*Ändert die Hintergrundfarbe der Menübuttons links*/
+  --lumo-primary-color: #002641 !important; /*Ändert die Hintergrundfarbe der Menübuttons links + Icons Menüleiste + Schriftfarbe "Zurück & Weiter"*/
   --tooltip-text-color: #002641 !important; /*Ändert die Textfarbe im Tooltip*/
   --tooltip-background-color: #AFB9C3 !important; /*Ändert die Hintergrundfarbe im Tooltip*/
+  --header-menubar--text-color: #ffffff !important; /*Ändert die Textfarbe im Header*/
+  --required-icon-color: #002641 !important; /*Required-Icon (Asterisk) Farbe wechseln*/
+  --required-selected-icon-color: #ffffff !important; /*Required-Icon (Asterisk) Farbe, wenn Eintrag in Menüleiste links aktiv*/
+  --fastentry-treegrid--active-label-color: #ffffff !important; /*Ändert die Textfarbe, wenn Eintrag in Menüleiste links aktiv*/
+  --fastentry-treegrid--active-background-color: #002641 !important; /*Ändert die Hintergrundfarbe der Menübuttons links*/
 }
