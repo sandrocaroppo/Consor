@@ -163,11 +163,6 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
   display: none;
 }
 
-/*Inputfelder vertikal zentrieren*/
-.column.form--column {
-  justify-content: center
-}
-
 /*Schriftfarbe der gespertten Inputfelder anpassen (input)*/
 .hide-parent input[disabled] {
   -webkit-text-fill-color: #002641;
@@ -176,6 +171,11 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
 /*Schriftfarbe der gespertten Inputfelder anpassen (label)*/
 .hide-parent label[disabled] {
   -webkit-text-fill-color: #002641;
+}
+
+/*Memo-Felder Grösse anpassen, damit gesamt Breite genutzt wird*/
+.form .form--row .form--column.column__grow.column__text_area {
+  min-width: 488px !important;
 }
 
 /*BEARBEITUNGSBEREICH DOKUMENT*/
@@ -246,12 +246,6 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
   border-top: 0px !important;
 }
 
-/*Padding der Radio-Buttons anpassen*/
-.select-optiongroup.select-optiongroup-horizontal {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 /*Textfarbe von Bausteinselektion, wenn UWR erlaubt*/
 .hide-parent .container_with_checkbox label{
   color: rgba(50, 58, 63, 1);
@@ -266,12 +260,6 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
 /*Textfarbe von auswählbaren Bausteinen in Tabellen*/
 .form.table_container.border_false label {
   color: rgba(50, 58, 63, 1)
-}
-
-/*Standardfeldlabel in Tabellenformat zentrieren*/
-.column.table_column_start {
-  padding-bottom: 5px;
-  padding-top: 2px;
 }
 
 /*Passt Hintergrundfarbe von Bausteintextfeldern an*/
@@ -354,6 +342,13 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
 .header-menubar-button {
   font-family: "BarmeniaGothaerWeb" !important;
   font-weight: bold
+}
+
+/*GEVO SUCHE*/
+
+/*GeVo Suche Feld "Geschäftsvorfall-Typ" Grösse anpassen*/
+#FieldGevoTypeDescr {
+  width: 316px !important;
 }
 
 /*GENERELL BODY*/
