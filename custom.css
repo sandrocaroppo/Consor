@@ -69,13 +69,17 @@
   background-color: #002641;
 }
 
+#notification-bell-button {
+  color: white !important;
+}
+
 /* In einem GeVo: Ersetzen des Images in der Menuleiste*/
 #fastentry-header {
   background-image: none !important; /*Consor-Muster entfernen*/
   background-color: #002641;
 }
 
-/*Grösse Logo anpassen für korrektes Verhältnis*/
+/*GrÃ¶sse Logo anpassen fÃ¼r korrektes VerhÃ¤ltnis*/
 #companyLogo {
   width: 194px !important;
 }
@@ -100,7 +104,7 @@
 
 .sfc-WARNING {
   -webkit-text-fill-color: transparent !important; /*Farbe vom Labeltext "WARNUNG"*/
-  width: 0px; /*damit Box ausgeblendet wird und Warnmeldetext linksbündig*/
+  width: 0px; /*damit Box ausgeblendet wird und Warnmeldetext linksbÃ¼ndig*/
   background-color: white !important; /*Hintergrundfarbe der Warnmeldung*/
 }
 
@@ -108,7 +112,7 @@
   border-bottom-color: transparent  !important; /*Farbe Underline der Warnmeldung anpassen*/
 }
 
-/*Für Text, der ausgegeben wird in Warnmeldung*/
+/*FÃ¼r Text, der ausgegeben wird in Warnmeldung*/
 .sfc-WARNING.S_WARNING textarea {
   -webkit-text-fill-color: #FF5F43 !important;
   font-weight: bold !important;
@@ -119,7 +123,7 @@
 
 .sfc-INFO {
   -webkit-text-fill-color: transparent !important; /*Farbe vom Labeltext "INFO"*/
-  width: 0px; /*damit Box ausgeblendet wird und Infotext linksbündig*/
+  width: 0px; /*damit Box ausgeblendet wird und Infotext linksbÃ¼ndig*/
   background-color: white !important; /*Hintergrundfarbe der Infomeldung*/
 }
 
@@ -127,7 +131,7 @@
   border-bottom-color: transparent  !important; /*Farbe Underline der Infomeldung anpassen*/
 }
 
-/*Für Text, der ausgegeben wird in Infomeldung*/
+/*FÃ¼r Text, der ausgegeben wird in Infomeldung*/
 .sfc-INFO.S_INFOMELDUNG textarea {
   -webkit-text-fill-color: #0088CC !important;
   font-weight: bold !important;
@@ -136,17 +140,17 @@
 }
 
 
-/*Minimale Breite auf 0 gesetzt, damit Info und Warnmeldungen linksbündig möglich*/
+/*Minimale Breite auf 0 gesetzt, damit Info und Warnmeldungen linksbÃ¼ndig mÃ¶glich*/
 .form .form--row .form--column {
   min-width: 0px !important;
 }
 
-/*Anpassung Spaltenbreite Warnmeldung, damit gesamte Länge genutzt wird bis zum Umbruch*/
+/*Anpassung Spaltenbreite Warnmeldung, damit gesamte LÃ¤nge genutzt wird bis zum Umbruch*/
 .column.form--column.column__grow.column__text_area.sfc-WARNING {
   min-width: 850px !important;
 }
 
-/*Anpassung Spaltenbreite Infomeldung, damit gesamte Länge genutzt wird bis zum Umbruch*/
+/*Anpassung Spaltenbreite Infomeldung, damit gesamte LÃ¤nge genutzt wird bis zum Umbruch*/
 .column.form--column.column__grow.column__text_area.sfc-INFO {
   min-width: 850px !important;
 }
@@ -158,11 +162,6 @@ div[slot="error-message"] {
 
 /*DIVERSES*/
 
-/*Erster Radio-Button ausblenden*/
-vaadin-radio-group vaadin-radio-button:first-of-type {
-  display: none;
-}
-
 /*Schriftfarbe der gespertten Inputfelder anpassen (input)*/
 .hide-parent input[disabled] {
   -webkit-text-fill-color: #002641;
@@ -173,7 +172,7 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
   -webkit-text-fill-color: #002641;
 }
 
-/*Memo-Felder Grösse anpassen, damit gesamt Breite genutzt wird*/
+/*Memo-Felder GrÃ¶sse anpassen, damit gesamt Breite genutzt wird*/
 .form .form--row .form--column.column__grow.column__text_area {
   min-width: 488px !important;
 }
@@ -220,23 +219,23 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
   padding-left: 24px;
 }
 
-/*Schriftgrösse von Dokumenttitel 2*/
+/*SchriftgrÃ¶sse von Dokumenttitel 2*/
 .title.title__medium {
   font-size: 20px !important;
 }
 
-/*Anpassungen an linke Menüleiste: Menüeinträge*/
+/*Anpassungen an linke MenÃ¼leiste: MenÃ¼eintrÃ¤ge*/
 .fastentry-treegrid vaadin-grid-cell-content{
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/*Top linke Menüleiste weiss formatiert*/
+/*Top linke MenÃ¼leiste weiss formatiert*/
 #fastentry-treegrid-container-buttoncontainer {
   background-color: white;
 }
 
-/*Anpassungen an linke Menüleiste: Margin entfernen und so gesamte Breite des Menüeintrages mit Farbe füllen*/
+/*Anpassungen an linke MenÃ¼leiste: Margin entfernen und so gesamte Breite des MenÃ¼eintrages mit Farbe fÃ¼llen*/
 #TreeDocFastEntryApplication {
   margin-left: 0px;
 }
@@ -251,13 +250,13 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
   color: rgba(50, 58, 63, 1);
 }
 
-/*Margin von auswählbaren Bausteinen in Tabellen*/
+/*Margin von auswÃ¤hlbaren Bausteinen in Tabellen*/
 .form.table_container.border_false {
   margin-bottom: 0px;
   margin-top: 0px
 }
 
-/*Textfarbe von auswählbaren Bausteinen in Tabellen*/
+/*Textfarbe von auswÃ¤hlbaren Bausteinen in Tabellen*/
 .form.table_container.border_false label {
   color: rgba(50, 58, 63, 1)
 }
@@ -267,17 +266,23 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
   background: #E1E6EB !important;
 }
 
-/*Einrückung von selektierbaren Bausteinen*/
+/*EinrÃ¼ckung von selektierbaren Bausteinen*/
 .container_with_checkbox {
   left: 0px !important;
 }
 
-/*Symbolfarbe bei änderbaren Bausteintexte (wenn noch kein Inhalt)*/
+/*Symbolfarbe bei Ã¤nderbaren Bausteintexte (wenn noch kein Inhalt)*/
 .edit-icon-empty {
   stroke: #00718f !important;
 }
 
-/*KONTEXTMENÜ FÜR DRUCKVORSCHAU*/
+/*Einrückung von Bausteintabellen entfernen*/
+vaadin-checkbox.hide-parent.container_with_checkbox {
+  padding-left: 0px !important;
+  padding-right: 24px !important;
+}
+
+/*KONTEXTMENÃœ FÃœR DRUCKVORSCHAU*/
 
 /*Hintergrundfarbe Druckvorschau Auswahlbereich*/
 .dialog-content-box .form.form__no-margin-bottom.namedcopyplugin-content {
@@ -321,14 +326,19 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
   background-color: #ffffff !important;
 }
 
-/*NEUER GEVO MENÜ*/
+/*NEUER GEVO MENÃœ*/
 
 /*Hintergund bei "Neuer GeVo" weiss formatieren*/
 #MainContractDataView {
   background-color: white !important;
 }
 
-/*Titel linksbündig machen*/
+/*Text Dunkel setzen*/
+vaadin-menu-bar-item {
+  --lumo-contrast: lumo-header-text-color;
+}
+
+/*Titel linksbÃ¼ndig machen*/
 #LabelTitleMainContractDataView {
   padding-left: 0px !important;
 }
@@ -338,7 +348,7 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
   margin-top: 20px !important;
 }
 
-/*Schriftart Menüleiste*/
+/*Schriftart MenÃ¼leiste*/
 .header-menubar-button {
   font-family: "BarmeniaGothaerWeb" !important;
   font-weight: bold
@@ -346,22 +356,21 @@ vaadin-radio-group vaadin-radio-button:first-of-type {
 
 /*GEVO SUCHE*/
 
-/*GeVo Suche Feld "Geschäftsvorfall-Typ" Grösse anpassen*/
+/*GeVo Suche Feld "GeschÃ¤ftsvorfall-Typ" GrÃ¶sse anpassen*/
 #FieldGevoTypeDescr {
   width: 316px !important;
 }
 
 /*GENERELL BODY*/
-
 body {
   --lumo-font-family: "BarmeniaGothaerWeb" !important;
   font-weight: normal;
   --lumo-primary-color-10pct: #f5f6f6 !important; /*Header Highlight Color*/
   --lumo-primary-color-20pct: #003C66 !important; /*Headerfarbe bei Hover*/
   --lumo-body-text-color: #002641 !important;
-  --lumo-header-text-color: #002641 !important; /*Schriftfarbe bei GeVo-Übersicht*/
+  --lumo-header-text-color: #002641 !important; /*Schriftfarbe bei GeVo-Ãœbersicht*/
   --lumo-primary-text-color: rgba(255, 255, 255, 1);
-  --lumo-secondary-text-color: #002641  !important; /*Passt Textfarbe der Überschriften an*/
+  --lumo-secondary-text-color: #002641  !important; /*Passt Textfarbe der Ãœberschriften an*/
   --lumo-disabled-text-color: rgba(165, 169, 171, 1);
   --lumo-primary-contrast-color: #002641 !important; /*Auswahl Radiobuttons innere Farbe*/
   --lumo-contrast: #E1F3FF !important ; /*Passt Hintergrundfarbe der Inputfelder an*/
@@ -372,7 +381,7 @@ body {
   --lumo-text-field-size: 32px;
   --lumo-shade: rgba(50, 58, 63, 1);
   --lumo-shade-5pct: #E1E6EB !important; /*Passt Hover-Hintergrundfarbe des Fastentry Treegrid an*/
-  --lumo-shade-10pct: #E1E6EB !important; /*Passt Hintergrundfarbe für gesperrte Standardfelder an*/
+  --lumo-shade-10pct: #E1E6EB !important; /*Passt Hintergrundfarbe fÃ¼r gesperrte Standardfelder an*/
   --lumo-shade-20pct: rgba(207, 210, 211, 1);
   --lumo-shade-30pct: rgba(165, 169, 171, 1);
   --lumo-shade-40pct: rgba(126, 132, 135, 1);
@@ -393,7 +402,7 @@ body {
   --lumo-success-color: rgba(210, 239, 230, 1);
   --lumo-success-contrast-color: rgba(29, 176, 131, 1);
   --lumo-error-color: rgba(247, 215, 220, 1);
-  --lumo-error-color-10pct: #FFD8D1 !important; /*Ändert die Hintergrundfarbe von Validierungsfelder*/
+  --lumo-error-color-10pct: #FFD8D1 !important; /*Ã„ndert die Hintergrundfarbe von Validierungsfelder*/
   --lumo-error-contrast-color: rgba(215, 57, 81, 1);
   --lumo-warning-color: rgba(255, 231, 204, 1);
   --lumo-warning-contrast-color: rgba(255, 133, 0, 1);
@@ -416,12 +425,13 @@ body {
   --radiobutton-background-color: var(--lumo-contrast);
   --radiobutton-border-color: var(--lumo-shade-30pct);
   --loading-indicator-color: #9ADCFF;
-  --lumo-primary-color: #002641 !important; /*Ändert die Hintergrundfarbe der Menübuttons links + Icons Menüleiste + Schriftfarbe "Zurück & Weiter"*/
-  --tooltip-text-color: #002641 !important; /*Ändert die Textfarbe im Tooltip*/
-  --tooltip-background-color: #AFB9C3 !important; /*Ändert die Hintergrundfarbe im Tooltip*/
-  --header-menubar--text-color: #ffffff !important; /*Ändert die Textfarbe im Header*/
+  --lumo-primary-color: #002641 !important; /*Ã„ndert die Hintergrundfarbe der MenÃ¼buttons links + Icons MenÃ¼leiste + Schriftfarbe "ZurÃ¼ck & Weiter"*/
+  --tooltip-text-color: #002641 !important; /*Ã„ndert die Textfarbe im Tooltip*/
+  --tooltip-background-color: #AFB9C3 !important; /*Ã„ndert die Hintergrundfarbe im Tooltip*/
+  --header-menubar--text-color: #ffffff !important; /*Ã„ndert die Textfarbe im Header*/
   --required-icon-color: #002641 !important; /*Required-Icon (Asterisk) Farbe wechseln*/
-  --required-selected-icon-color: #ffffff !important; /*Required-Icon (Asterisk) Farbe, wenn Eintrag in Menüleiste links aktiv*/
-  --fastentry-treegrid--active-label-color: #ffffff !important; /*Ändert die Textfarbe, wenn Eintrag in Menüleiste links aktiv*/
-  --fastentry-treegrid--active-background-color: #002641 !important; /*Ändert die Hintergrundfarbe der Menübuttons links*/
+  --required-selected-icon-color: #ffffff !important; /*Required-Icon (Asterisk) Farbe, wenn Eintrag in MenÃ¼leiste links aktiv*/
+  --fastentry-treegrid--active-label-color: #ffffff !important; /*Ã„ndert die Textfarbe, wenn Eintrag in MenÃ¼leiste links aktiv*/
+  --fastentry-treegrid--active-background-color: #002641 !important; /*Ã„ndert die Hintergrundfarbe der MenÃ¼buttons links*/
 }
+
