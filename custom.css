@@ -361,6 +361,27 @@ vaadin-menu-bar-item {
   width: 316px !important;
 }
 
+/*HÖHE MEMO-FELDER ANPASSEN*/
+.column.form--column.column__grow:has(> .html-textarea.hide-parent.field) {
+    --box-height: 100px;
+ 
+    flex: 0 0 auto !important;
+    height: var(--box-height) !important;
+    min-height: 0 !important;
+    max-height: var(--box-height) !important;
+    align-self: flex-start !important;
+    overflow: hidden;
+}
+ 
+.column.form--column.column__grow
+> .html-textarea.hide-parent.field {
+    height: var(--box-height) !important;
+    min-height: 0 !important;
+    max-height: var(--box-height) !important;
+    align-self: flex-start !important;
+    overflow-y: auto !important;
+}
+
 /*GENERELL BODY*/
 body {
   --lumo-font-family: "BarmeniaGothaerWeb" !important;
