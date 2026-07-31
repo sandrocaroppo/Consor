@@ -131,6 +131,17 @@
   border-bottom-color: transparent  !important; /*Farbe Underline der Infomeldung anpassen*/
 }
 
+/*Für Warnmeldung im Tabellenformat*/
+
+label[id*="_WARNUNG"][disabled] {
+    visibility: hidden;
+}
+.S_WARNING input {
+    -webkit-text-fill-color: #FF5F43 !important;
+    background: white;
+    --_lumo-text-field-overflow-mask-image: none;
+}
+
 /*FÃ¼r Text, der ausgegeben wird in Infomeldung*/
 .sfc-INFO.S_INFOMELDUNG textarea {
   -webkit-text-fill-color: #0088CC !important;
